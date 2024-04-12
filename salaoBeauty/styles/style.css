@@ -1,0 +1,486 @@
+/* Color Theme Swatches in Hex */
+.cor-texto { color: #4F4546; }
+.cor-principal { color: #F2A2B8; }
+.cor-destaque1 { color: #EC4571; }
+.cor-destaque2 { color: #E85C81; }
+.cor-fundo1 { color: #F5B4B4; }
+.cor-fundo2 { color: #E9A8A3; }
+.cor-sombras { color: #BD5757; }
+
+/* Color Theme Swatches in RGBA */
+/* .cor-texto-rgb { color: rgba(79, 69, 70, 1); }
+.cor-principal-rgb { color: rgba(242, 162, 184, 1); }
+.cor-destaque1-rgb { color: rgba(236, 69, 113, 1); }
+.cor-destaque2-rgb { color: rgba(232, 92, 129, 1); }
+.cor-fundo1-rgb { color: rgba(245, 180, 180, 1); }
+.cor-fundo2-rgb { color: rgba(233, 168, 163, 1); }
+.cor-sombras-rgb { color: rgba(189, 87, 87, 1); } */
+
+/* Importação de fonte para o titulo */
+@font-face {
+    font-family: 'Fonte Logo';
+    src: url('../fontes/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Formatação geral para todo o documento */
+* {
+    margin: 0%;
+    color: #4F4546;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Formatação geral para todas as listas */
+.listas {
+    list-style: none;
+}
+/* Formatação geral para todos os links */
+a {
+    text-decoration: none;
+}
+
+/* Formatação para o logo do menu */
+#logo {
+    border-radius: 50%;
+    width: 50px;
+    margin-left: 30px;
+    margin-right: 10px;
+    color: rgb(79, 69, 70, 0.1)
+}
+
+/* Formatação para o texto da logo no menu */
+#beauty p {
+    letter-spacing: 8px;
+    font-weight: bolder;
+    font-family: 'Fonte Logo';
+    font-size: 35px;
+}
+
+/* Formatação para a div da logo no menu (imagem mais texto)*/
+#beauty {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Formatação da nav bar (menu) */
+nav {
+    padding-top: 10px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    background-image: radial-gradient(circle, rgb(260, 190, 190, 0.3), rgb(245, 180, 180, 0.3), rgb(230, 160, 160, 0.3));
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Formatação da lista de navegação dos itens do menu*/
+#listaMenu {
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#listaMenu li {
+    margin-right: 30px;
+}
+
+#listaMenu li:last-child {
+    margin-right: 5px;
+}
+
+#listaMenu li a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #FCF0F0;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(182, 87, 87, 0.5);
+}
+
+#listaMenu li a:hover {
+    color: #EC4571;
+    font-weight: bold;
+}
+
+/* Formatação para o header que é a introdução da página*/
+header {
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 90%), url('../imagens/fundos/mulherMeio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Formatação para os textos do baner de introducao */
+#textosDestaque {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+#textosDestaque h1 {
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    font-style: italic;
+    font-size: 4em;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    text-shadow: 2px 2px 4px rgba(182, 87, 87, 0.571);
+}
+
+#textoDireita {
+    width: 400px;
+    padding-right: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Nome da empresa destacado no texto da introdução */
+#beautyIntro {
+    letter-spacing: 3px;
+}
+
+/* Desconto destacado no texto da introdução */
+#desconto {
+    font-size: 20px;
+    color: #EC4571;
+}
+
+#textoDireita p {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#textoEsquerda {
+    text-transform: uppercase;
+    width: 300px;
+}
+
+/* Formatação para o botão agendar da introduçao */
+#botaoIntro {
+    margin-top: 30px;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+#botaoIntro:hover {
+    background-color: #EC4571;
+}
+
+#botaoIntro a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #EC4571;
+}
+
+#botaoIntro:hover a {
+    color: white;
+}
+
+/* Edição geral para os titulos das seções */
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Fonte Logo';
+    letter-spacing: 8px;
+
+}
+
+/* Formatação para a primeira seção: Nossos serviços */
+
+.imgServicos {
+    width: 100px;
+    height: 100px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.linhaServicos { /* Cada linha com 4 serviços */
+    display: flex;
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    background-color: rgb(245, 180, 180, 0.5);
+    padding: 20px;
+}
+
+/* Testo que acompanha o servico */
+.servicoDescricao { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border-right: #4F4546 2px solid;
+}
+
+.servicoDescricao:hover {
+    background-color: rgb(232, 92, 129, 0.4);
+    border: black solid 2px;
+}
+
+.textoServicos h3 {
+    margin-bottom: 10px;
+}
+
+#secao1Titulos h2 {
+    margin-left: 20px;
+
+}
+
+#secao1Titulos {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.separador1 hr {
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #F2A2B8, #F2A2B8, #F2A2B8);
+}
+
+.linhaServicos .servicoDescricao:last-child {
+    border-right: none;
+}
+
+/* Fundo de toda parte 1, com fundo de imagem */
+#secao1 {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(../imagens/fundos/fundoSecao1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Formato da seção nosso time */
+#nossoTimeFundo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: rgba(189, 87, 87, 0.6);
+    flex-direction: column;
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* todo o fundo da parte de time */
+#nossoTime {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f9b9b76a;
+    margin: auto;
+}
+
+#nossoTime h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 3em;
+}
+
+/* Cada pessoa do time */
+.umaPessoa {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.infoPessoa {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    min-height: 180px;
+}
+
+.infoPessoa h3,
+.infoPessoa p {
+    color: white;
+}
+
+.imgTime {
+    width: 350px;
+    height: 550px;
+}
+
+.umaPessoa:hover {
+    border: #ec4571a0 solid 2px;
+}
+
+.umaPessoa:hover .infoPessoa {
+    background-color: rgba(250, 190, 190, 0.8);
+}
+
+.umaPessoa:hover h3,
+.umaPessoa:hover p {
+    color: #4F4546;
+}
+
+.infoPessoa h3 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* imagem de fundo da secao de time */
+#imagemDeFundo {
+    background-image: url(../imagens/fundos/fundoMulheres.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Edições na seção de agendar horarios */
+#imgAgendamento {
+    width: 400px;
+    opacity: 0.8;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+/* div que contem toda a seção de agendamento */
+#agendamento {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E9A8A3;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../imagens/fundos/secandoFundoRosa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#formularioTitulo h2 {
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(182, 87, 87, 0.2);
+}
+
+/* campo de inserir nome */
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(182, 87, 87, 0.8);
+}
+
+/* parte de escolher o servico */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* botal de agendamento final */
+#botaoFinal {
+    width: 100%;
+    padding: 10px;
+    background-color: #EC4571;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botaoFinal:hover {
+    background-color: #F2A2B8;
+}
+
+/* Edições no rodapé */
+
+footer {
+    padding-right: 0;
+    background-color: #7e6769;
+    padding-top: 50px;
+    padding-bottom: 20px;    
+}
+
+footer li, footer p, footer a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#infosRodape{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+#infosRodape ul{
+    padding: 0;
+}
+
+#email{
+    text-transform: lowercase;
+}
+
+#copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#infosRodape img {
+    width: 15px;
+    margin-right: 10px;
+    opacity: 80%;
+}
+
+#infosRodape li {
+    margin-bottom: 5px;
+}
+
+#infosRodape li:first-of-type{
+    margin-bottom: 20px;
+    opacity: 1;
+    font-size: large;
+    border-bottom: #E85C81 2px solid;
+}
+
+#infosRodape li, a {
+    color: #f0f0f0;
+    opacity: 0.8;
+}
+
+#infosRodape li a:hover {
+    color: #f0f0f0;
+    opacity: 1;
+    text-decoration: underline;
+}

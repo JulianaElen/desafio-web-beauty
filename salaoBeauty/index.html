@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/mediaDark.css">
+
+    <!-- Import do codigo js -->
+    <script src="codigo.js"></script>
+
+    <title>Beauty Salon</title>
+
+    <!-- Icone do site -->
+    <link rel="icon" href="./imagens/outras-imagens/logoBeauty.jpg">
+</head>
+
+<body>
+    <!-- Menu de navegação -->
+    <nav>
+        <div id="beauty">
+            <img id="logo" src="./imagens/outras-imagens/logo.jpg"
+                alt="Silhueta de uma mulher com fundo rosa. Abaixo o nome da empresa: BEAUTY.">
+            <p>BEAUTY</p>
+        </div>
+        <ul class="listas" id="listaMenu">
+            <li><a href="#agendar">AGENDAR</a></li>
+            <li><a href="#nossosServicos">SERVIÇOS</a></li>
+            <li><a href="#nossoTime">TIME</a></li>
+            <li><a href="#infosRodape">CONTATOS</a></li>
+            <!--inserindo o botão de por dark mode -->
+            <li>
+                <input type="checkbox" id="darkModeCheck">
+                <label for="darkModeCheck" id="checkboxLabel"></label>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Cabeçalho da pagina -->
+    <header>
+        <div id="textosDestaque">
+            <h1 id="textoEsquerda"> Seja a sua melhor versão </h1>
+            <div id="textoDireita">
+                <p>Para melhor atender aos nossos clientes, a <b id="beautyIntro">BEAUTY</b> está de cara nova!</p>
+                <p>Venha conhecer a nossa nova loja e ganhe <b id="desconto">20%</b> de desconto no seu primeiro
+                    atendimento.</p>
+                <button id="botaoIntro"><a href="#agendar">Agende o seu horário</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Primeira parte da pagina, onde são descritos os servicos oferecidos pela empresa -->
+        <section id="nossosServicos">
+            <div id="secao1">
+                <div id="secao1Titulos">
+                    <h2>Nosso serviços</h2>
+                    <div class="separador1">
+                        <hr>
+                    </div>
+                </div>
+                <div class="linhaServicos">
+                    <div class="servicoDescricao">
+                        <img class="imgServicos" src="./imagens/icones-servicos/tintura-para-cabelo.png"
+                            alt="Mulher pintando o cabelo.">
+                        <h3>Coloração</h3>
+                    </div>
+                    <div class="servicoDescricao">
+                        <img class="imgServicos" src="./imagens/icones-servicos/corte-de-cabelo.png"
+                            alt="Mulher cortando o cabelo.">
+                        <h3>Corte de cabelo</h3>
+                    </div>
+                    <div class="servicoDescricao">
+                        <img class="imgServicos" src="./imagens/icones-servicos/cabelo.png"
+                            alt="Mulher lavando o cabelo.">
+                        <h3>Tratamentos capilares</h3>
+                    </div>
+                    <div class="servicoDescricao">
+                        <img class="imgServicos" src="./imagens/icones-servicos/secador-de-cabelo.png"
+                            alt="Mulher fazendo cachos no cabelo">
+                        <h3>Penteados</h3>
+                    </div>
+                </div>
+                <div class="linhaServicos">
+                    <div class="servicoDescricao">
+                        <img class="imgServicos" src="./imagens/icones-servicos/maquiagem.png"
+                            alt="Mulher sendo maquiada">
+                        <h3>Maquiagem</h3>
+                    </div>
+                    <div class="servicoDescricao">
+                        <img class="imgServicos" src="./imagens/icones-servicos/sobrancelha.png"
+                            alt="Mulher tendo a sobrancelha maquiada.">
+                        <h3>Design de sobrancelhas</h3>
+                    </div>
+                    <div class="servicoDescricao">
+                        <img class="imgServicos" src="./imagens/icones-servicos/depilacao.png"
+                            alt="Cera para depilação sendo esticada.">
+                        <h3>Depilação</h3>
+                    </div>
+                    <div class="servicoDescricao">
+                        <img class="imgServicos" src="./imagens/icones-servicos/manicure.png"
+                            alt="Unhas sendo feitas pela manicure.">
+                        <h3>Manicure e Pedicure</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Segunda parte, onde são descritas informações sobre o time da empresa -->
+        <section id="nossoTime">
+            <div id="imagemDeFundo">
+                <div id="nossoTimeFundo">
+                    <h2>Nosso Time</h2>
+                    <div class="linhaTime">
+                        <div class="umaPessoa">
+                            <img class="imgTime" src="./imagens/pessoas/colorista.jpg"
+                                alt="Homem segurando uma mistura para pintar cabelos.">
+                            <div class="infoPessoa">
+                                <h3>Gabriel Almeira</h3>
+                                <p>Artista das cores, realiza colorações vibrantes, mechas luminosas e técnicas de
+                                    balayage para
+                                    criar looks únicos e expressivos de acordo com o estilo de cada cliente.</p>
+                            </div>
+                        </div>
+                        <div class="umaPessoa">
+                            <img class="imgTime" src="./imagens/pessoas/cabeleireira.jpg"
+                                alt="Mulher cortando o cabelo de alguém.">
+                            <div class="infoPessoa">
+                                <h3>Sofia Pereira</h3>
+                                <p>Especialista em cortes modernos, penteados elegantes e tratamentos capilares para
+                                    homens,
+                                    mulheres e crianças, proporcionando um visual renovado e personalizado.</p>
+                            </div>
+                        </div>
+                        <div class="umaPessoa">
+                            <img class="imgTime" src="./imagens/pessoas/maquiadora.jpg"
+                                alt="Maquiadora maquiando uma pessoa.">
+                            <div class="infoPessoa">
+                                <h3>Isabela Costa</h3>
+                                <p>Artista da maquiagem, cria looks deslumbrantes para diversas ocasiões, incluindo
+                                    maquiagem
+                                    social, noivas, eventos especiais e produções artísticas, realçando a beleza natural
+                                    de cada
+                                    cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="linhaTime">
+                        <div class="umaPessoa">
+                            <img class="imgTime" src="./imagens/pessoas/manicure.jpg" alt="Manicure fazendo unhas.">
+                            <div class="infoPessoa">
+                                <h3> Juliana Santos</h3>
+                                <p>Especialista em cuidados com as mãos e pés, realiza manicures e pedicures completos,
+                                    incluindo
+                                    tratamentos de hidratação, esfoliação e aplicação de esmaltes e nail art.</p>
+                            </div>
+                        </div>
+                        <div class="umaPessoa">
+                            <img class="imgTime" src="./imagens/pessoas/massagista.jpg"
+                                alt="Massagem sendo feita no pé de uma mulher.">
+                            <div class="infoPessoa">
+
+                                <h3>Rafaela Oliveira</h3>
+                                <p>Terapeuta dedicada ao bem-estar físico e mental, oferece massagens relaxantes,
+                                    terapêuticas e
+                                    revitalizantes para alívio do estresse, dores musculares e melhoria da circulação.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="umaPessoa">
+                            <img class="imgTime" src="./imagens/pessoas/depiladora.jpeg"
+                                alt="Mulher esticando cera de depilação.">
+                            <div class="infoPessoa">
+                                <h3>Camila Silva</h3>
+                                <p>Profissional experiente em depilação com cera quente e métodos de depilação a laser,
+                                    oferecendo
+                                    uma remoção eficaz e suave de pelos em diferentes áreas do corpo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parte final, para agendamentos -->
+        <section id="agendar">
+            <div id="agendamento">
+                <div id="formularioTitulo">
+                    <div>
+                        <h2>Agende seu horário</h2>
+                    </div>
+                    <form>
+                        <div class="campo">
+                            <label for="nome">Nome:</label> <!-- insecao de nome no menu agendamento -->
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="campo"> <!-- opção de escolher o serviço desejado -->
+                            <label for="servico">Selecione o Serviço:</label>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione...</option>
+                                <option value="Coloração">Coloração</option>
+                                <option value="Corte de cabelo">Corte de cabelo</option>
+                                <option value="Tratamentos capilares">Tratamentos capilares</option>
+                                <option value="Penteados">Penteados</option>
+                                <option value="Maquiagem">Maquiagem</option>
+                                <option value="Design de sobrancelhas">Design de sobrancelhas</option>
+                                <option value="Depilação">Depilação</option>
+                                <option value="Manicure e Pedicure">Manicure e Pedicure</option>
+                            </select>
+                        </div>
+                        <button id="botaoFinal" type="submit">Agendar</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="infosRodape">
+            <ul class="listas" id="linkInicio">
+                <li>Links</li>
+                <li><a href="#textosDestaque">INÍCIO</a></li>
+                <li><a href="#agendar">AGENDAR</a></li>
+                <li><a href="#nossosServicos">SERVIÇOS</a></li>
+                <li><a href="#nossoTime">TIME</a></li>
+                <li><a href="#infosRodape">CONTATOS</a></li>
+            </ul>
+            <ul class="listas">
+                <li>Contatos</li>
+                <li><img src="./imagens/icones-redes/instagram (1).png" alt="icone do instagram"><a
+                        href="">Intragram</a></li>
+                <li><img src="./imagens/icones-redes/whatsapp.png" alt="icone do whatsapp"><a href="">WhatsApp</a></li>
+                <li><img src="./imagens/icones-redes/icons8-facebook-48.png" alt="icone do facebook"><a
+                        href="">Facebook</a>
+                </li>
+                <li><img src="./imagens/icones-redes/icons8-telefone-48.png" alt="icone de um telefone antigo"><a
+                        href="">+55 31
+                        9 8888-3333</a></li>
+                <li><img src="./imagens/icones-redes/icons8-nova-mensagem-24.png" alt="icone do email, uma carta"><a
+                        href="" id="email">beautysalao@gmail.com.br</a></li>
+            </ul>
+            <ul class="listas" id="fontesImagens">
+                <li> Imagens de uso livre </li>
+                <li><a href="https://icons8.com">Icons8</a></li>
+                <li><a href="https://www.flaticon.com">Flaticon</a></li>
+                <li><a href="https://www.pexels.com/">Pexels</a></li>
+            </ul>
+        </div>
+        <p id="copyright">Desenvolvido por Juliana Elen Silva Oliveira - PDITA109 © 2024, Todos os diretos reservados
+        </p>
+    </footer>
+</body>
+
+</html>

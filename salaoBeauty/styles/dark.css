@@ -1,0 +1,102 @@
+/* Estilizando a checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+label#checkboxLabel {
+    background-size: cover;
+    background-image: url('../imagens/outras-imagens/lua-crescente.png');
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    filter: invert(100%);
+    opacity: 70%;
+}
+
+input[type="checkbox"]:checked+label#checkboxLabel {
+    background-image: url('../imagens/outras-imagens/solar.png');
+    filter: invert(100%);
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+
+}
+
+/* Formatação da nav bar (menu) */
+body.dark-mode nav {
+    background-image: radial-gradient(circle, rgb(160, 80, 80, 0.3), rgb(145, 90, 90, 0.3), rgba(115, 75, 75, 0.3));
+}
+
+/* Formatação para o logo do menu */
+body.dark-mode #beauty p {
+    color: white;
+}
+
+body.dark-mode #listaMenu li a:hover {
+    color: #322B2C;
+}
+
+body.dark-mode header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 90%), url('../imagens/fundos/mulherMeio.jpg');
+}
+
+body.dark-mode #textosDestaque h1 {
+    color: #322B2C;
+    text-shadow: 2px 2px 4px rgba(139, 67, 67, 0.8);
+}
+
+body.dark-mode #botaoIntro {
+    background-color: #D3748D;
+}
+
+body.dark-mode #botaoIntro:hover {
+    background-color: #EC4571;
+}
+
+body.dark-mode #botaoIntro a {
+    color: white;
+}
+
+body.dark-mode #desconto {
+    color: #CB5172;
+}
+
+body.dark-mode .separador1 hr {
+    background-image: linear-gradient(to right, #D58FA3, #D58FA3, #D58FA3);
+}
+
+body.dark-mode #secao1 {
+    background-image: linear-gradient(to bottom, rgb(59, 56, 56), rgba(255, 255, 255, 0)), url(../imagens/fundos/fundoSecao1.jpg);
+}
+
+body.dark-mode #nossosServicos h2 {
+    color: #fff;
+}
+
+body.dark-mode #nossoTimeFundo {
+    background-color: rgba(19, 17, 17, 0.6);
+}
+
+body.dark-mode .umaPessoa:hover .infoPessoa {
+    background-color: rgba(203, 146, 146, 0.8);
+}
+
+body.dark-mode .umaPessoa:hover {
+    border: #D03C64 solid 2px;
+}
+
+body.dark-mode #botaoFinal {
+    background-color: #D3748D;
+}
+
+body.dark-mode #botaoFinal:hover {
+    background-color: #EC4571;
+}
+
+/* parte de escolher o servico */
+body.dark-mode input[type="text"],
+select {
+    border: 1px solid #424040;
+}

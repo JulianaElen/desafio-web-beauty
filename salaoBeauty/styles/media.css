@@ -1,0 +1,123 @@
+@media screen and (max-width: 768px) {
+
+    /* Ajuste para o logo do menu */
+    #logo {
+        width: 30px;
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    /* Ajuste para o texto da logo no menu */
+    #beauty p {
+        font-size: 0px;
+        width: 0;
+    }
+
+    /* Ajuste para a lista de navegação no menu */
+    #listaMenu {
+        padding: 0%;
+        align-items: center;
+    }
+
+    /* Ajuste para os itens do menu */
+    #listaMenu li {
+        margin-right: 10px;
+    }
+
+    #listaMenu li a {
+        font-size: 14px;
+    }
+
+    /* Formatação para o header */
+    #textosDestaque {
+        flex-direction: column;
+    }
+
+    /* ajuste das linhas de servicos */
+    .linhaServicos {
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .servicoDescricao {
+        flex-direction: row;
+        border-left: #4F4546 2px solid;
+    }
+
+    .linhaServicos .servicoDescricao:last-child {
+        border-right: #4F4546 2px solid;
+    }
+
+    /* ajuste dos textos da introducao */
+    #textoEsquerda {
+        width: auto;
+        text-align: center;
+    }
+
+    #textoDireita {
+        width: auto;
+        padding: 0;
+        margin-top: 70%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* ajuste das imagens do time */
+    .imgTime {
+        width: 100%;
+    }
+
+    /* ajuste da imagem da parte de agendamento (fundo) */
+    #imgAgendamento {
+        width: 100%;
+    }
+
+    /* Formatação para o botão agendar da introduçao */
+    #botaoIntro {
+        border: #EC4571 1px solid;
+        width: auto;
+    }
+
+    #botaoIntro a {
+        color: #EC4571;
+    }
+
+    /* Cada pessoa do time */
+
+    .umaPessoa {
+        margin: 5%;
+    }
+
+    /* ajuste do formulario de agendamento */
+    #formularioTitulo {
+        text-align: center;
+        align-items: center;
+    }
+
+    label {
+        text-align: center;
+    }
+
+    #botaoFinal {
+        width: 90%;
+    }
+
+    #nome,
+    #servico {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #infosRodape ul {
+        padding: 0%;
+        margin-bottom: 20px;
+    }
+
+    #infosRodape{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+}
